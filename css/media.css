@@ -1,0 +1,91 @@
+
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+    padding-top: 70px;
+  }
+  .page_fix {
+    top: 0 !important;
+    position: static !important;
+  }
+  html.lock {
+    overflow: hidden;
+  }
+  .container {
+    padding: 0 16px;
+  }
+
+
+
+
+.menu__icon {
+    display: flex;
+    height: 36px;
+    width: 36px;
+    flex-direction: column;
+    align-items: end;
+    margin-left: 16px;
+    margin-top: 26px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .line {
+    display: block;
+    border-bottom: 2px solid #4a4a4a;
+    height: 7px;
+    transition: all 0.5s ease 0s;
+  }
+  .line.active {
+    height: 0;
+  }
+  .menu__line_top {
+    width: 27px;
+    padding-top: 1px;
+  }
+  .menu__line_top.active {
+    transform: rotate(-45deg);
+    margin-top: 16px;
+  }
+  .menu__line_middle {
+    width: 27px;
+  }
+  .menu__line_middle.active {
+    width: 27px;
+    transform: rotate(45deg) translateX(-1px) translateY(-1px);
+  }
+  .menu__line_bottom {
+    width: 16px;
+  }
+  .menu__line_bottom.active {
+    width: 0;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    overflow-y: hidden;
+    background-color: #fff;
+    z-index: 99;
+  }
+  .header__menu {
+    position: fixed;
+    width: 100%;
+    overflow: auto;
+    top: 70px;
+    padding-top: 0;
+  }
+  .panel__title {
+    margin-bottom: 28px;
+  }
+  .header__menu.active {
+    z-index: 100;
+    top: 70px;
+    bottom: 0;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-top: 1px solid #e5edf0;
+  }
+}
