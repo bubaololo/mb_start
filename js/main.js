@@ -6,3 +6,13 @@ document.querySelector(".menu__icon").addEventListener("click", (event) => {
       .forEach((element) => element.classList.toggle("active"));
     document.querySelector("html").classList.toggle("lock");
   });
+
+  // let cards = document.querySelectorAll('.flip-card-inner');
+
+  // cards.forEach((card) => card.addEventListener('click', flip));
+  // function flip(){
+  //   this.classList.toggle('is-flipped');
+  // }
+
+
+
